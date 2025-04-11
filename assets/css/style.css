@@ -48,6 +48,7 @@ a {
 
 p {
     color: var(--color-text);
+    font-size: 15px;
 }
 
 /* End Base */
@@ -220,21 +221,116 @@ p {
     align-items: center;
 }
 
-.discuss .inner-image img {
+.left-right-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discuss .left-right-image img {
     margin: 0 70px 30px 70px;
     width: 250px;
     height: auto;
 }
 
-.inner-discuss .inner-title {
+.inner-content .inner-title {
     font-size: 24px;
     margin-bottom: 30px;
 }
 
-.inner-discuss .inner-desc {
+.inner-content .inner-desc {
     font-size: 16px;
 }
-/* End.inner-discuss */
+/* End Discuss */
+
+@media (max-width: 991.98px) {
+    .home-features {
+        margin-top: 0;
+    }
+}
+
+/* Grow Business */
+.grow-business .inner-grow-business {
+    border-top: 1px solid var(--color-text);
+    padding: 150px 0 50px 0;
+}
+
+.inner-content .inner-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.inner-content .inner-desc {
+    font-size: 16px;
+}
+
+.inner-grow-business .left-right-image img {
+    width: 250px;
+    height: auto;
+}
+/* End Grow Business */
+
+/* Work Process */
+.work-process {
+    padding: 100px 0;
+    background-image: url(../images/work-process-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+.work-process .inner-box {
+    background-color: #fff;
+    border-radius: 30px;
+    margin: 0 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.work-process .inner-box::before {
+    content: "";
+    border-radius: 30px;
+    background-color: #fff;
+    opacity: 0.2;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.work-process .inner-box:hover {
+    margin-top: -20px;
+    transition: all 0.3s ease 0s;
+}
+
+.work-process .inner-content .inner-title {
+    font-size: 28px;
+    color: #fff;
+}
+
+.work-process .inner-content .inner-desc {
+    color: #fff;
+    font-size: 15px;
+    padding-bottom: 50px;
+}
+
+.work-process .inner-box .inner-image {
+    padding: 20px 0;
+
+}
+
+.work-process .inner-box .inner-title {
+    font-weight: 400;
+    font-size: 17px;
+    padding: 0;
+}
+
+.work-process .inner-box .inner-desc {
+    font-size: 14px;
+    padding: 5px 25px 20px 25px;
+}
+/* End Work Process */
 
 /* Button */
 .button-one {
