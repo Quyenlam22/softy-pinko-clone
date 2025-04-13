@@ -18,7 +18,7 @@ body {
 
 body::selection {
     background-color: var(--color-one);
-    color: #fff; 
+    color: #fff;
 }
 
 ul {
@@ -32,6 +32,10 @@ ul {
 a {
     text-decoration: none;
     color: #000;
+}
+
+a:hover {
+    color: var(--color-one);
 }
 
 .button {
@@ -81,10 +85,6 @@ p {
     padding: 15px;
     font-size: 14px;
     font-weight: 400;
-}
-
-.inner-header ul li:hover a {
-    color: var(--color-one);
 }
 
 .inner-header .inner-icon-menu {
@@ -212,6 +212,7 @@ p {
         margin-top: 0;
     }
 }
+
 /* End Home Features */
 
 /* Discuss */
@@ -243,6 +244,7 @@ p {
 .inner-content .inner-desc {
     font-size: 16px;
 }
+
 /* End Discuss */
 
 @media (max-width: 991.98px) {
@@ -270,6 +272,7 @@ p {
     width: 250px;
     height: auto;
 }
+
 /* End Grow Business */
 
 /* Work Process */
@@ -302,7 +305,7 @@ p {
 }
 
 .work-process .inner-box:hover {
-    margin-top: -20px;
+    margin-top: -15px;
     transition: all 0.3s ease 0s;
 }
 
@@ -332,6 +335,7 @@ p {
     font-size: 14px;
     padding: 5px 25px 20px 25px;
 }
+
 /* End Work Process */
 
 /* Testimonials */
@@ -395,6 +399,7 @@ p {
     font-size: 15px;
     color: var(--color-one);
 }
+
 /* Testimonials */
 
 /* Pricing Plans */
@@ -449,7 +454,7 @@ p {
     font-weight: 500;
 }
 
-.pricing-plans .inner-price .dollars{
+.pricing-plans .inner-price .dollars {
     font-size: 32px;
 }
 
@@ -472,7 +477,123 @@ p {
 .pricing-plans .inner-list ul li.inactive {
     text-decoration: line-through;
 }
+
 /* End Pricing Plans */
+
+/* Statistics */
+.statistics {
+    background-image: url(../images/fun-facts-bg.png);
+    padding: 100px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+.statistics .inner-box {
+    position: relative;
+}
+
+.statistics .inner-box:not(:nth-child(4)):after {
+    content: '';
+    position: absolute;
+    width: 22%;
+    height: 20px;
+    top: 50px;
+    right: -40px;
+    background-image: url(../images/circle-dec.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.statistics .inner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.statistics .inner-content:hover {
+    margin-top: -15px;
+    transition: all 0.3s ease 0s;
+}
+
+.statistics .inner-content .inner-count {
+    font-size: 36px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.statistics .inner-content .inner-title {
+    font-size: 17px;
+    margin: 0;
+}
+
+@media (max-width: 1199.98px) {
+    .statistics .inner-box:not(:nth-child(4))::after {
+        width: 28%;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .statistics .inner-box:not(:nth-child(4))::after {
+        width: 0;
+    }
+}
+
+/* End Statistics */
+
+/* Blog Entries */
+.blog-entries {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.blog-entries .inner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-entries .inner-content .inner-title {
+    font-size: 28px;
+    margin: 0;
+}
+
+.blog-entries .inner-content .inner-desc {
+    font-size: 15px;
+    margin: 30px;
+}
+
+.blog-entries .inner-box {
+    margin: 15px 5px;
+}
+
+.blog-entries .inner-box .inner-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.blog-entries .inner-box .inner-title {
+    font-size: 18px;
+    margin: 20px;
+}
+
+.blog-entries .inner-box .inner-desc {
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767.98px) {
+    .blog-entries .inner-box .inner-image img {
+        width: 75%;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+/* End Blog Entries */
 
 /* Button */
 .button-one {
